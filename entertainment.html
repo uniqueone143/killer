@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #eaeaea;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            position: relative;
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            height: 500px;
+            background: #f5f5f5;
+            box-shadow: 0 30px 50px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .slide {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            width: 100%;
+        }
+
+        .item {
+            min-width: 20%;
+            height: 300px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            margin: 0 10px;
+            overflow: hidden;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .item:hover {
+            transform: scale(1.05);
+        }
+
+        .content {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            color: #fff;
+            display: none;
+        }
+
+        .slide .item:nth-child(2) .content {
+            display: block;
+        }
+
+        .content .name {
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .content p {
+            margin-top: 8px;
+            font-size: 14px;
+        }
+
+        .content button {
+            margin-top: 10px;
+            padding: 8px 16px;
+            border: none;
+            background-color: #ffd700;
+            color: #000;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .content button:hover {
+            background-color: #28a745;
+            color: #fff;
+        }
+
+        .controls {
+            text-align: center;
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+        }
+
+        .controls button {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+            margin: 0 10px;
+            background-color: #fff;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
+
+        .controls button:hover {
+            background-color: #505050;
+            color: #fff;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                height: 400px;
+            }
+
+            .item {
+                min-width: 100%;
+            }
+
+            .content {
+                font-size: 14px;
+            }
+
+            .content .name {
+                font-size: 16px;
+            }
+        }
+
+        .back {
+            padding: 10px;
+        }
+
+        .back button {
+            padding: 10px;
+            background-color: gold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .back button:hover {
+            background-color: green;
+            color: red;
+        }
+
+        .title p {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="back">
+        <a href="cute.html"><button>Back</button></a>
+    </div>
+
+    <div class="container">
+        <div class="title">
+            <p>Anime That I Watch</p>
+        </div>
+
+        <div class="slide">
+            <div class="item" style="background-image: url(img/j.jpg);">
+                <div class="content">
+                    <div class="name">JUJUTSU KAISEN</div>
+                    <p>Jujutsu Kaisen is a dark fantasy anime set in a world where cursed spirits threaten humanity. It explores themes of friendship, sacrifice, and the struggle between good and evil.</p>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(img/magic.jpg);">
+                <div class="content">
+                    <div class="name">DEATH NOTE</div>
+                    <p>Death Note is a psychological thriller where a high school student uses a notebook with deadly powers to control life and death.</p>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(img/doctor.jpg);">
+                <div class="content">
+                    <div class="name">DOCTOR STONE</div>
+                    <p>Doctor Stone follows Senku, a genius scientist, as he rebuilds civilization after humanity is mysteriously petrified.</p>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(img/h.webp);">
+                <div class="content">
+                    <div class="name">HUNTER X HUNTER</div>
+                    <p>Hunter x Hunter is known for its complex characters and thrilling adventures of Gon, a boy striving to become a legendary hunter.</p>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(img/demonslayer.jpg);">
+                <div class="content">
+                    <div class="name">DEMON SLAYER</div>
+                    <p>Demon Slayer follows Tanjiro Kamado as he battles demons in feudal Japan to save his sister and avenge his family.</p>
+                    <button>See More</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+            <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </div>
+
+    <script>
+        const slide = document.querySelector('.slide');
+        const next = document.querySelector('.next');
+        const prev = document.querySelector('.prev');
+
+        next.addEventListener('click', () => {
+            slide.appendChild(slide.firstElementChild);
+        });
+
+        prev.addEventListener('click', () => {
+            slide.prepend(slide.lastElementChild);
+        });
+    </script>
+</body>
+</html>

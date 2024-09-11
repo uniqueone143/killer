@@ -1,0 +1,109 @@
+body{
+   background-image: url("img/f.jpg");
+   border-image: fill 0 linear-gradient(#0001,#000);
+background-size: cover;
+background-position: center;
+height: 100vh;
+width:100%;
+}
+
+.container{
+    margin-right: 20px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top:
+    0px;
+    box-shadow: 1px 1px 5px #000;
+padding-right: 400px;
+word-spacing: 100px;
+
+
+}
+nav ul li{
+    list-style-type:none;
+    display: inline-block;
+    padding: 10px 20px;
+    word-spacing: 300px;
+
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.content{
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    transform: translate(-50%);
+}
+h2{
+    color: white;
+    margin: 20px;
+    font-size: 25px;
+    justify-content: center;
+    display: grid;
+}
+h1{
+    color: white;
+}
+p{
+    font-size: 25px;
+    color: yellow;
+}
+img{
+    border-radius: 60px;
+    height: 100px;
+    width: 100px;
+    display: grid;
+    justify-content: center;
+    margin-left:85px;
+    margin-bottom: 20px;
+}
+input{
+    padding: 10px 35px 10px;
+    border-radius: 7px;
+    margin-left: 13px;
+}
+button a:hover{
+color:red;
+}
+button{
+    margin-top: 5px;
+    margin-left: 110px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: gold;
+}
+button a{
+    text-decoration: none;
+color:black;
+font-weight: bold;
+}
+
+span{
+    color: white;
+}
+
+.form{
+ display: grid;
+ justify-content: center;
+ margin-top: 150px;
+}
+form{
+    box-shadow: 1px 1px 10px gold;
+    width: 270px;
+    padding: 20px 5px 5px;
+    border-radius: 10px;
+    
+
+}

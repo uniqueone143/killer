@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+    <style>
+        /* General reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url("img/k.jpg");
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            max-width: 1200px;
+            padding: 20px;
+        }
+
+        .img {
+            margin-bottom: 20px;
+        }
+
+        .img img {
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+        }
+
+        .nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgba(255, 215, 0, 0.9); /* gold color */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .nav div {
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        .nav button {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: gold;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .nav button:hover {
+            background-color: green;
+            color: red;
+        }
+
+        .content {
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Responsive for smaller devices */
+        @media (max-width: 768px) {
+            .img img {
+                width: 150px;
+                height: 150px;
+            }
+
+            .nav {
+                max-width: 300px;
+            }
+
+            .nav button {
+                font-size: 14px;
+                padding: 8px;
+            }
+
+            .content {
+                font-size: 14px;
+            }
+        }
+
+        /* Responsive for very small devices (mobile phones) */
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+
+            .img img {
+                width: 100px;
+                height: 100px;
+            }
+
+            .nav {
+                padding: 10px;
+                max-width: 250px;
+            }
+
+            .nav button {
+                font-size: 12px;
+                padding: 6px;
+            }
+
+            .content {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="img">
+            <img src="img/ok.avif" alt="Profile Image">
+        </div>
+        <div class="content">
+            <p>Hi, I'm L. Once again, nice to meet you!<br>You can now explore my website. I hope you like it!</p>
+        </div>
+
+        <div class="nav">
+            <div class="home">
+                <a href="#"><button>Home</button></a>
+            </div>
+            <div class="entertainment">
+                <a href="entertainment.html"><button>Entertainment</button></a>
+            </div>
+            <div class="about">
+                <a href="cool.html"><button>About</button></a>
+            </div>
+            <div class="logout"></div>
+                <a href="onlyone.html"><button>Lagout</button></a>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

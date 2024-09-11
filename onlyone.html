@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("img/f.jpg");
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            padding: 20px;
+        }
+
+        nav.person {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 15px;
+            color: white;
+            box-shadow: 1px 1px 5px #000;
+        }
+
+        nav.person ul {
+            list-style-type: none;
+            display: flex;
+            margin: 0;
+        }
+
+        nav.person ul li {
+            margin: 0 15px;
+        }
+
+        nav.person ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .content {
+            text-align: center;
+            color: white;
+            margin-top: 50px;
+        }
+
+        .form {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        form {
+            box-shadow: 1px 1px 10px gold;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.1);
+            width: 100%;
+            max-width: 300px;
+        }
+
+        img {
+            border-radius: 60px;
+            height: 100px;
+            width: 100px;
+            display: block;
+            margin: 0 auto 20px;
+        }
+
+        h2 {
+            color: white;
+            text-align: center;
+        }
+
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: gold;
+            border: none;
+            border-radius: 5px;
+            color: black;
+            font-weight: bold;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        button:hover {
+            background-color: #ffcc00;
+        }
+
+        button a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            nav.person ul li {
+                margin: 0 10px;
+            }
+
+            .content {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="person">
+            <h2 class="logo"><span> OK</span></h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h1>Oh! I see, you are interested huh!<br><span>By the way, welcome to my website!</span></h1>
+            <p><br>Why don't you guess my nickname?</p>
+        </div>
+    </div>
+
+    <div class="form">
+        <form id="loginForm" method="post">
+            <img src="img/h.jpg" alt="Profile Image">
+            <h2>Guest</h2>
+
+            <input type="password" id="passwordInput" placeholder="Enter my nickname">
+            <input type="checkbox" id="box"><span>Show the nickname</span><br>
+
+            <button type="submit">Enter</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>       
+</body>
+</html>
